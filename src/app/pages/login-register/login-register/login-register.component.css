@@ -1,0 +1,115 @@
+ *{
+     box-sizing: border-box;
+ }
+ 
+ section {
+ font-size:2vw;
+  width: calc(100% - 200px);
+  height: calc(100% - 70px);
+  position: absolute;
+  left: 220px;
+  background-color:#f0efef;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px -20px;
+}
+
+.card {
+  width: 30%;
+  height: 50%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  border: 1px solid #acaaaa;
+  background-color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  flex-direction: column;
+  box-shadow:5px 5px 20px grey; 
+}
+
+.card:hover{
+    border: 1px solid #6e6f72;
+}
+
+.card .headLogin {
+  width: 100%;
+  box-sizing:border-box;    
+  padding: 20px;
+  border-bottom: 1px solid #acaaaa ;
+  text-align: center;
+}
+
+input[type=text] {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    
+}
+
+input[type=password] {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    
+}
+.card .userLogin {
+    width: 100%;
+    padding-top: 40px;
+}
+
+
+.card .userPassword {
+    width: 100%;
+    box-sizing:border-box;
+    padding-top: 10px;
+}
+
+
+.card .rememberUserIn{
+    width: 60%;
+    font-size:1vw;
+}
+
+.card .rememberUser{
+    width: 100%;
+    box-sizing:border-box;
+    padding: 10px;
+    left: -20%;
+}
+.card .submitLogin{
+    width: 100%;
+    box-sizing:border-box;
+    padding: 10px;
+} 
+
+
+input[type=submit] {
+    background-color: #1976d2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: center;
+    font-size: 1vw;
+    width: 40%;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #186dc2 ;
+  }
+
+
+
+  

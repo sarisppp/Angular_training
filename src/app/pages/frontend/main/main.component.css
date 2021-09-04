@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+section {
+font-size:2.5vw;
+ width: calc(100% - 220px);
+ height: calc(100% - 70px);
+ position: absolute;
+ left: 220px;
+background-color:#f0efef;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ box-sizing: border-box;
+ margin: 0px -20px;
+} 
+
+.title{
+    color:rgb(56, 56, 56);
+    top: -25%;
+    position: relative;
+    
+}
+
+
+.recoment{
+    color:rgb(56, 56, 56);
+    top: -20%;
+    left: -35%;
+    font-size:2vw;
+    position: relative;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.box{
+    top: -20%;
+    min-width: 80%;
+    min-height: 30%;
+    background-color:#d5c6b8;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  
+}
+.card{
+
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    flex-wrap: nowrap;
+    text-align: center;
+    line-height: 45px;
+    margin: 15px;
+    border: 1px solid #545557;
+   
+}
+.card div:first-child{
+    margin-top: 40px;
+    font-size: 2vw;
+    color:#545557;
+}
+.card div:nth-child(2){
+    font-size: 3vw;
+    color:#545557;
+  
+}
+.card div:last-child{
+    font-size: 1.2vw;
+  text-align: right;
+}
+
+.card > div{
+    background-color: #fdfdfd;
+    margin: 10px;
+    color:#717377;
+}
+
+.CardTrainingTopics{
+    top: 50%;
+    min-width: 80%;
+    min-height: 40%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color:#545557;
+
+}
+.TrainingTopics{
+    background-color:#ffffff;
+    line-height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(117, 117, 117);
+    font-size: 3vh;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(207, 204, 204);
+
+
+}
+.TrainingTopics > div{
+    width: 25%;
+}
+.btnTrain{
+width: 70%;
+height: 50%;
+border-radius: 20px;
+font-size: 3vh;
+background-color:#4067e8;
+color: #ffffff;
+
+}
+
+
+div{
+   margin: 5px;
+}
+
+
+@keyframes myAnim {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
+  
+    80% {
+      transform: translateX(8px);
+    }
+  
+    90% {
+      transform: translateX(-8px);
+    }
+  }

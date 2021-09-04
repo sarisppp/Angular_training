@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  font-size: 2.5vw;
+  width: calc(100% - 220px);
+  height: calc(100% - 70px);
+  position: absolute;
+  left: 220px;
+  background-color: #f0efef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0px -20px;
+}
+
+.title {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 30px;
+  color: #363535;
+}
+
+.avatar {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.avatar__image {
+  border-radius: 200px;
+}
+
+.employeeId {
+  top: 400px;
+  position: absolute;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  color: #5a5959;
+}
+
+.name {
+  top: 430px;
+  position: absolute;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  color: #5a5959;
+}
+
+.grid-area {
+  position: absolute;
+  width: 90%;
+  top: 470px;
+  font-size: 24px;
+  
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 18px;
+  overflow: auto;
+}
+
+table, td, th {
+  border: 1px solid rgb(100, 100, 100);
+}
+th{
+  background-color: #55d876;
+  height: 60px;
+  font-size: 20px;
+}
+td{
+  height:60px;
+}
+
+
+.btmregistered{
+  width: 30%;
+  height:  80%;
+  border-radius: 20px;
+  background-color:#4067e8;
+  color: #ffffff;
+  
+}
+
+.btntrained{
+  width: 30%;
+  height:  80%;
+  border-radius: 20px;
+  background-color:#53cf3a;
+  color: #ffffff;
+  
+}
+.btncancel{
+  width: 30%;
+  height: 80%;
+  border-radius: 20px;
+  background-color:#e73939;
+  color: #ffffff;
+}

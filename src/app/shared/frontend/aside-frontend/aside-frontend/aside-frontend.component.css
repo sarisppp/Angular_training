@@ -1,0 +1,50 @@
+aside{
+    max-width: 200px;
+    background-color: #4d4842;
+    height: calc(100vh - 70px);
+    overflow: auto;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    text-align: center;
+
+}
+.navigation{
+    margin-top: 60px;
+    
+}
+.navigation li{
+    margin-top: 40px;
+    list-style: none;
+    
+}
+
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+    align-items: center;
+
+}
+.navigation ul li:hover{
+    border-right: 10px solid rgba(209, 115, 74, 1);
+}
+
+.navigation ul li a i {
+    padding-right: 10px;
+    font-size: 40px;
+    font-family: 'Material Icons';
+}
+ 
+   
+div p{
+    
+ margin-bottom: 20px; 
+   font-size: 10px; 
+   color:rgb(167, 167, 167);
+}
+

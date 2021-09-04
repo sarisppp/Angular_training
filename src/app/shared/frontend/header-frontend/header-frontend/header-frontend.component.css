@@ -1,0 +1,87 @@
+header {
+  background-color: #d1734a;
+  display: flex;
+  height: 70px;
+  box-shadow: 5px 5px 10px #888888;
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+li .material-icons {
+    
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;  
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+li {
+  display: inline-block;
+  color: white;
+  padding: 22px 16px;
+  text-decoration: none;
+  float: right;
+  font-size: 20px;
+
+}
+
+li:first-child {
+  float: left;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+
+}
+li a:visited{
+    color: white;
+}
+li a:hover{
+    color:rgba(90, 90, 90, 0.945) ;
+}
+
+li:nth-child(2) {
+  float: left;
+}
+li:nth-child(3){
+    padding: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.avatar__image {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
