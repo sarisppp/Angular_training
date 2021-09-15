@@ -1,10 +1,13 @@
+import { PathService } from './Services/path.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-import { BackendLayoutComponent } from './layouts/backend-layout/backend-layout/backend-layout.component';
+
+
 import { FrontendLayoutComponent } from './layouts/frontend-layout/frontend-layout/frontend-layout.component';
 import { LoginRegisterLayoutComponent } from './layouts/login-register-layout/login-register-layout/login-register-layout.component';
 import { FooterFrontendComponent } from './shared/frontend/footer-frontend/footer-frontend/footer-frontend.component';
@@ -18,6 +21,10 @@ import { DetailsLayoutComponent } from './layouts/details-layout/details-layout.
 import { DetailsComponent } from './pages/frontend/details/details.component';
 import { ProfileLayoutComponent } from './layouts/profile-layout/profile-layout.component';
 import { ProfileComponent } from './pages/frontend/profile/profile.component';
+import { RegisterComponent } from './pages/backend/register/register.component';
+import { RegisterLayoutComponent } from './layouts/backend-layout/register-layout/register-layout.component';
+import { CourseLayoutComponent } from './layouts/backend-layout/course-layout/course-layout.component';
+
 
 
 
@@ -25,7 +32,6 @@ import { ProfileComponent } from './pages/frontend/profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
-    BackendLayoutComponent,
     FrontendLayoutComponent,
     LoginRegisterLayoutComponent,
     FooterFrontendComponent,
@@ -37,14 +43,19 @@ import { ProfileComponent } from './pages/frontend/profile/profile.component';
     DetailsLayoutComponent,
     DetailsComponent,
     ProfileLayoutComponent,
-    ProfileComponent
+    ProfileComponent,
+    RegisterComponent,
+    CourseLayoutComponent,
+    RegisterLayoutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [PathService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

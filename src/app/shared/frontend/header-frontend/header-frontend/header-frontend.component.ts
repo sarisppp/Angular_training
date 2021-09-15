@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { TokenService } from 'src/app/Services/token.service';
+import { Router } from '@angular/router';
+import { AuthService } from './../../../../Services/auth.service';
 
 @Component({
   selector: 'app-header-frontend',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderFrontendComponent implements OnInit {
 
-  constructor() { }
+  public loggedIn:any;
+  
+  constructor(private Auth:AuthService,
+    private router:Router,
+    private Token:TokenService) { }
 
-  ngOnInit(): void {
+  ngOnInit():void {
+    this.Auth.authStatus.subscribe(value=>this.loggedIn = value);
   }
+
+
+
 
 }

@@ -1,16 +1,19 @@
 
-<section>
+    <section>
    
     <div class="card">
         <div class="headLogin">
-            
+         
             <label for="headLogin">เข้าใช้งาน</label> 
         </div>
+     
+     <form #loginForm=ngForm (ngSubmit)="onSubmit()">
+        <div class="alert" [hidden]="!error">{{error}}</div>
         <div class="userLogin">
-            <input type="text" size="50" placeholder="Username" >
+            <input type="text" size="50" name=email placeholder="Email"  [(ngModel)]="form.email" required>
         </div>
         <div class="userPassword">
-            <input type="password" size="50" placeholder="Your password" >
+            <input type="password" size="50" name=pw placeholder="password"  [(ngModel)]="form.password" required>
         </div>
         <div class="rememberUser">
             <div class="rememberUserIn">
@@ -18,9 +21,12 @@
             <label>จำฉันไว้ในระบบ</label>
             </div>
          </div>
-         <div class="submitLogin">
-            <input type="submit" value="เข้าสู่ระบบ">
+         
+         <div class="submitLogin" >
+            <input type="submit" value="เข้าสู่ระบบ" [disabled]="!loginForm.valid">
          </div>
+     </form>
+
     </div>
-   
+
 </section>

@@ -6,6 +6,7 @@ header {
   
 }
 
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -69,10 +70,12 @@ li:nth-child(2) {
   float: left;
 }
 li:nth-child(3){
+  float: right;
     padding: 0;
     padding-top: 10px;
     padding-right: 10px;
 }
+
 
 .avatar {
     border-radius: 50%;
@@ -85,3 +88,4 @@ li:nth-child(3){
     height: 100%;
     width: 100%;
 }
+

@@ -8,7 +8,8 @@
             <div class="hour"><b>ชั่วโมง :</b> &nbsp; 8 ช.ม.</div>
             <div class="location"><b>สถานที่ :</b> &nbsp; {{location}}</div>
             <div class="time"><b>เวลา :</b>&nbsp; 8.00-17.00 น.</div>
-            <div class="button"><button class="btnTrain">ลงทะเบียน</button></div>
+            <div class="button" *ngIf="loggedIn"><button class="btnTrain">ลงทะเบียน</button></div>
+      
           </div>
     </div>
 

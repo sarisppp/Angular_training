@@ -1,0 +1,45 @@
+
+    <section>
+   
+        <div class="card">
+            <div class="headLogin">
+             
+                <label for="headLogin">ลงทะเบียน</label> 
+            </div>
+         
+         <form #registerForm=ngForm (ngSubmit)="onSubmit()">
+           
+            <div class="user">
+                <input type="text" size="50" name=firtname placeholder="ชื่อ"  [(ngModel)]="form.firstname" required>
+            </div>
+            <div class="user">
+                <input type="text" size="50" name=lastname placeholder="นามสกุล"  [(ngModel)]="form.lastname" required>
+            </div>
+            <div class="user">
+                <input type="text" size="50" name=department placeholder="แผนก"  [(ngModel)]="form.department" required>
+            </div>
+            <div class="user">
+                <input type="text" size="50" name=employeeId placeholder="รหัสพนักงาน"  [(ngModel)]="form.employeeid" required>
+            </div>
+            <div class="alert" [hidden]="!error.email">{{error.email}}</div>
+            <div class="user">
+                <input type="text" size="50" name=email placeholder="Email"  [(ngModel)]="form.email" required>
+            </div>
+            <div class="userPassword">
+                <input type="password" size="50" name=pw placeholder="รหัสผ่าน"  [(ngModel)]="form.password" required>
+            </div>
+            <div class="alert" [hidden]="!error.password">{{error.password}}</div>
+            <div class="userPassword">
+                <input type="password" size="50" name=checkpw placeholder="ยืนยันรหัสผ่าน"  [(ngModel)]="form.password_confirmation" required>
+            </div>
+            
+
+             <div class="submitLogin" >
+                <input type="submit" value="เข้าสู่ระบบ" [disabled]="!registerForm.valid">
+             </div>
+         </form>
+    
+        </div>
+    
+    </section>
+    

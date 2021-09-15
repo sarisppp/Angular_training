@@ -2,6 +2,8 @@
      box-sizing: border-box;
  }
  
+
+
  section {
  font-size:2vw;
   width: calc(100% - 200px);
@@ -66,13 +68,32 @@ input[type=password] {
 .card .userLogin {
     width: 100%;
     padding-top: 40px;
+    
 }
+
+
+.card .userLogin .ng-invalid:not(form){
+    border-left:5px solid red;
+}
+.card .userLogin .ng-valid:not(form){
+    border-left:5px solid green;
+}
+
 
 
 .card .userPassword {
     width: 100%;
     box-sizing:border-box;
     padding-top: 10px;
+}
+
+
+.card .userPassword .ng-invalid:not(form){
+    border-left:5px solid red;
+}
+
+.card .userPassword .ng-valid:not(form){
+    border-left:5px solid green;
 }
 
 
@@ -110,6 +131,10 @@ input[type=submit] {
     background-color: #186dc2 ;
   }
 
-
+  .alert {
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      background-color: rgb(255, 104, 104);
+  }
 
   

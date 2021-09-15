@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+section {
+font-size:2vw;
+ width: calc(100% - 200px);
+ height: calc(100% - 70px);
+ position: absolute;
+ left: 220px;
+ background-color:#f0efef;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ box-sizing: border-box;
+ margin: 0px -20px;
+}
+
+.card {
+ width: 30%;
+ height: 60%;
+ position: relative;
+ align-items: center;
+ display: flex;
+ border: 1px solid #acaaaa;
+ background-color: #ffffff;
+ font-weight: 600;
+ text-align: center;
+ box-sizing: border-box;
+ padding: 10px;
+ border-radius: 20px;
+ flex-direction: column;
+ box-shadow:5px 5px 20px grey; 
+}
+
+

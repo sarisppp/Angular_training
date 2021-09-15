@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackendLayoutComponent } from './backend-layout.component';
+import { CourseLayoutComponent } from './course-layout.component';
 
-describe('BackendLayoutComponent', () => {
-  let component: BackendLayoutComponent;
-  let fixture: ComponentFixture<BackendLayoutComponent>;
+describe('CourseLayoutComponent', () => {
+  let component: CourseLayoutComponent;
+  let fixture: ComponentFixture<CourseLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BackendLayoutComponent ]
+      declarations: [ CourseLayoutComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BackendLayoutComponent);
+    fixture = TestBed.createComponent(CourseLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

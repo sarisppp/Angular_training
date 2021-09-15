@@ -14,11 +14,18 @@
                     </a>
                 </li>
                 <li>
-                    <a routerLink="/login">
+                    <a routerLink="/login" *ngIf=!loggedIn>
                         <span class='icon'><i class="material-icons" aria-hidden="true">login</i>
                         </span>
                         <span class='title'>เข้าสู่ระบบ</span>
                     </a>
+
+                    <a href="#" (click)="logout($event)" *ngIf=loggedIn>
+                        <span class='icon'><i class="material-icons" aria-hidden="true">logout</i>
+                        </span>
+                        <span class='title'>ออกจากระบบ</span>
+                    </a>
+                 
                 </li>
             </ul>
 
